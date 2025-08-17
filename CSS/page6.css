@@ -1,0 +1,249 @@
+/* Entete */
+
+header {
+    position: fixed;
+    display: flex;
+    padding-bottom: 1px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    background-image: linear-gradient(to top right, white, rgb(161, 161, 161));
+    color: black;
+}
+header h1 {
+    margin-right: 10px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 80px;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    color: rgb(4,157,195);
+}
+header h2 {
+    font-size: 35px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    color: white;
+    letter-spacing: 2px;
+}
+
+header a, header img{
+    position :auto;
+    margin-right: auto;
+    padding-left: 30px;
+    width: auto;
+    height: 180px;
+}
+
+header + h3 {
+    padding-top: 180px;
+    text-align: center;
+}
+
+/* Menu */
+
+.menu {
+    display: flex;
+    padding:10px;
+    margin-left: 35%;
+    margin-top: 180px;
+    text-align: center;
+    list-style-type: none;
+    width:550px;
+    background-image: linear-gradient(to bottom left, rgba(255,0,0,0), rgb(192, 192, 192));
+
+}
+.menu > li > a{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.menu a{
+    display: block;
+    padding-left: 40px;
+    padding-top: 2px;
+    font-size: auto;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu a#jeune{
+    margin-left: 15px;
+    color: rgb(225,4,109);
+}
+.menu a#jeune:hover{
+    background-color: rgb(225,4,109);
+    color:white;
+}
+.menu a#partenaires{
+    color: rgb(11,4,93);
+}
+.menu a#partenaires:hover{
+    background-color: rgb(11,4,93);
+    color:white;
+}
+.menu a#referent{
+    color: rgb(4,140,93);
+}
+.menu a#referent:hover{
+    background-color: rgb(4,140,93);
+    color:white;
+}
+.menu a#consultant{
+    background-color: rgb(4,157,195);
+    color:white;
+}
+/* Texte + bouton valider */
+
+h3{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+    margin-top: 40px;
+    color: #049dc3;
+}
+
+button{
+    background-color: #048c5d;
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    margin-left: 90%;
+}
+
+/* Placement des cases */
+
+div#container{
+    display:grid;
+    text-align: justify;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+div#container > div{
+    display:grid;
+    text-align: justify;
+    width: 800px;
+    padding-left: 30px;
+    margin-left: 20px;
+}
+div#cocher + p{
+    margin-left: 575px;
+    margin-top: -380px;
+}
+div#container > div p{
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    letter-spacing: -1px;
+}
+div#form{
+    width: 450px;
+    height: 300px;
+    margin-top: 10px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+div#cocher{
+    margin-left: 550px;
+    margin-top: -350px;
+    width: 200px;
+    height: 100px;
+}
+        
+/*jeune*/
+div#container > div#jeunes{
+    border: #e1046d solid 2px;
+}
+div#container > div#jeunes p{
+    color: #e1046d;
+}
+
+/*référent*/
+div#container > div#referent{
+    border: #048c5d solid 2px;
+}
+div#container > div#referent p{
+    color: #048c5d;
+}
+
+
+fieldset#Inforose{
+    color: #e1046d;
+    border: #e1046d 1px solid;
+    width: 400px;
+}
+
+div#Qualité table#Qualité{
+    border: 1px solid #e1046d;
+    border-collapse: collapse;
+    width: 200px;
+    height:auto;
+}
+div#Qualité table#Qualité th{
+    background-image:  linear-gradient(to right, lightpink, #e1046d);
+    height:50px;
+}
+div#Qualité table#Qualité td{
+    background-color: rgb(255, 220, 226);
+}
+
+fieldset#Infovert{
+    color: #048c5d;
+    border: #048c5d 1px solid;
+    width: 400px;
+}
+
+div#Qualité table#vert{
+    border: 1px solid #048c5d;
+    border-collapse: collapse;
+    width: 200px;
+    height:auto;
+}
+div#Qualité table#vert th{
+    background-image:  linear-gradient(to right, #9FD8C4, #048c5d);
+    height:50px;
+}
+div#Qualité table#vert td{
+    background-color: #ceffef;
+}
+
+/*zone reponse rose en pointillé*/
+.form-style-4 input[type=text],
+.form-style-4 input[type=date],
+.form-style-4 input[type=number],
+.form-style-4 input[type=email] 
+{
+	background: transparent;
+	border: none;
+	border-bottom: 1px dashed #e1046d;
+	width: 275px;
+	outline: none;
+	padding: 0px 0px 0px 0px;
+	font-style: italic;
+    width: 220px;
+}
+
+/*zone reponse verte en pointillé*/
+.form-style-5 input[type=text],
+.form-style-5 input[type=date],
+.form-style-5 input[type=number],
+.form-style-5 input[type=email] 
+{
+	background: transparent;
+	border: none;
+	border-bottom: 1px dashed #048c5d;
+	width: 275px;
+	outline: none;
+	padding: 0px 0px 0px 0px;
+	font-style: italic;
+    width: 220px;
+}

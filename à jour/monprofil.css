@@ -1,0 +1,56 @@
+h1.p-5{
+    text-align: center;
+    font-size: 50px;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    color: #0b045d;
+}
+
+hr{
+    background-color: #e1046d;
+    height: 1px;
+}
+
+table{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    border: rgb(225,4,109) solid 1px;
+    color: rgb(11,4,93);
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+th,td{
+    border: rgb(225,4,109) solid 1px;
+    font-family: Helvetica, sans-serif;
+    font-size: 95%;
+    border-radius: 5px;
+}
+
+td{
+    padding: 12px 8px;
+    font-weight: lighter;
+}
+
+/* Lien/bouton */
+
+a {
+    display: block;
+    margin-top: 3%;
+    margin-left: 45%;
+    width:10%;
+    height: 40px;
+    text-align: middle;
+  }
+  a button{
+    border-radius: 5px;
+    margin: 0;
+    width:100%;
+    height: inherit;
+    background-color: white;
+    color: rgb(11,4,93);
+  }
+  a button:hover{
+    border: #e1046d solid 1px;
+    cursor:pointer;
+  }
